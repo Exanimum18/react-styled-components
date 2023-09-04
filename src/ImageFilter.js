@@ -4,16 +4,17 @@ import salud from "./assets/images/salud.svg";
 import otros from "./assets/images/otros.svg";
 import transporte from "./assets/images/transporte.svg";
 import utilidades from "./assets/images/utilidades.svg";
-import { Icono } from "./Components/UI";
+// Se importa IconoTema para traer el cambio de color de la pagina
+import { Icono, IconoTema } from "./Components/UI";
 
 export default (type) => {
   // este type es el que viene en info.js
   const Images = {
-    Restaurante: <Icono src={alimentacion} alt="Restaurante" />,
-    Salud: <Icono src={salud} alt="Salud" />,
-    Transporte: <Icono src={transporte} alt="Transporte" />,
-    Utilidades: <Icono src={utilidades} alt="Utilidades" />,
-    default: <Icono src={otros} alt="Otros" />,
+    Restaurante: <IconoTema src={alimentacion} alt="Restaurante" />,
+    Salud: <IconoTema src={salud} alt="Salud" />,
+    Transporte: <IconoTema src={transporte} alt="Transporte" />,
+    Utilidades: <IconoTema src={utilidades} alt="Utilidades" />,
+    default: <IconoTema src={otros} alt="Otros" />,
   };
 
   // Si no encuentra el type pone una imagen por defecto
