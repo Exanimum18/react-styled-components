@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 import Title from "../Title";
 import Account from "../Account";
+import List from "../List";
 
 const StyleContainer = styled.div`
   background-color: #f1f1f1;
@@ -27,6 +28,7 @@ const Container = () => {
       <StyledContent>
 
         <Account />
+        <List />
 
       </StyledContent>
 
